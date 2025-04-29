@@ -1,11 +1,11 @@
- cd ndb-cluster
+  cd ndb-cluster
  docker-compose up -d  
  docker ps
  docker exec -it mysql1 mysql -u root -p
 password:rootpass123
 
  create database class;
-  use ty
+  use class
 create table ty( name varchar(20));
  insert into ty values('shruti');
 
@@ -16,7 +16,6 @@ docker stop ndb1
 docker exec -it mysql1 mysql -u root -p
 password:rootpass123
  use class
- select* from class;
  select* from ty;
   insert into ty values('sarthak');
   select* from ty;
